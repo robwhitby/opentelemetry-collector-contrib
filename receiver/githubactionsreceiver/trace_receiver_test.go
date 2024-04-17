@@ -181,8 +181,8 @@ func TestResourceAndSpanAttributesCreation(t *testing.T) {
 			desc:            "WorkflowJobEvent Step Attributes",
 			payloadFilePath: "./testdata/completed/5_workflow_job_completed.json",
 			expectedSteps: []map[string]string{
-				{"ci.github.step.name": "Set up job", "ci.github.step.number": "1"},
-				{"ci.github.step.name": "Run actions/checkout@v3", "ci.github.step.number": "2"},
+				{"ci.github.workflow.job.step.name": "Set up job", "ci.github.workflow.job.step.number": "1"},
+				{"ci.github.workflow.job.step.name": "Run actions/checkout@v3", "ci.github.workflow.job.step.number": "2"},
 			},
 		},
 	}
